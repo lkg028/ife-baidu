@@ -155,6 +155,7 @@ header>a {
 }
 footer {
     background-color: #000;
+    min-width: 980px;
 }
 footer ul.nav {
     border-bottom: 1px solid #666;
