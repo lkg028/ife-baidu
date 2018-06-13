@@ -1,0 +1,11 @@
+h1 {
+    color:blue;
+}
+h2 {
+    font-size: 14px;
+    color: yellow;
+    background: #000;
+}
+img {
+    border: 2px solid red;
+}
