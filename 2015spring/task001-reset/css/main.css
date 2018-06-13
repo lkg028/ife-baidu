@@ -1,0 +1,99 @@
+/* 先设置清除一些默认样式 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    display: inline-block;
+}
+/* 页面样式开始 */
+/* 页面头部 */
+header {
+    position: relative;
+    height: 100px;
+    background-color: purple;
+    color: #fff;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 980px;
+    height: 100px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+header li {
+    margin-left: 20px;
+}
+header li:nth-child(1){
+    margin-left: 0;
+}
+header > a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 34px;
+    margin-right: 20px;
+}
+/* banner部分 */
+#banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 1300px;
+    height: 600px;
+    margin: 0 auto;
+    padding-right: 160px;
+    background-image: url(../img/banner-bg.jpg);
+    background-size: auto 100%;
+}
+#banner .content {
+    width: 500px;
+    padding: 15px;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.7) 0%,
+        rgba(255, 255, 255, 0.5) 75%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+/* 图文描述部分 */
+.figure-text {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 10px;
+    padding-bottom: 200px;
+    background-color: #ddd;
+}
+.figure-text > div {
+    width: 320px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+.figure-text > div:nth-child(1) {
+    margin-left: 0;
+}
+/* 用户介绍部分 */
+.user {
+    min-width: 980px;
+    padding-bottom: 200px;
+    background-color: #fff;
+}
+.user .user-avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: -30px auto 0 auto;
+    border-radius: 100px;
+    overflow: hidden;
+}
