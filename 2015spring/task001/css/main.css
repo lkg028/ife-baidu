@@ -120,3 +120,85 @@ header>a {
 .figure-text div:nth-child(1){
     margin-left: 0;
 }
+.user {
+    padding-bottom: 200px;
+    min-width: 980px;
+}
+.user .user-avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: -40px auto 20px auto;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.user .user-avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -260px;
+    margin-top: -120px;
+}
+.user h2 {
+    font-family: "Century Gothic";
+    font-size: 40px;
+    text-align: center;
+    margin: 40px auto;
+}
+.user p {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5;
+}
+footer {
+    background-color: #000;
+}
+footer ul.nav {
+    border-bottom: 1px solid #666;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+footer ul.nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+footer ul.nav li:nth-child(1) {
+    margin-left: 0;
+}
+footer .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 980px;
+    margin: 0px auto;
+    padding: 50px;
+    padding-left: 0;
+    color: #fff;
+}
+footer .container div {
+    width: 200px;
+}
+footer .container div ul {
+    list-style-type: none;
+    margin-top: 30px;
+    font-size: 12px;
+}
+footer .container div li {
+    line-height: 2em;
+}
+footer .container div h3 {
+    font-size: 16px;
+    color: #999;
+}
+footer .copyright {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+footer .copyright img {
+    margin-top: 10px;
+}
