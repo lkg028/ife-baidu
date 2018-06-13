@@ -1,11 +1,122 @@
-h1 {
-    color:blue;
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
-h2 {
+header {
+    position: relative;
+    min-width: 980px;
+    height: 80px;
+    background-color: purple;
+}
+header nav {
+    position: relative;
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+header nav * {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+header nav h1, header nav ul {
+    position: absolute;
+    bottom: 15px;
+}
+header nav ul {
+    right: 0;
+}
+header nav ul a {
+    padding-left: 30px;
+    font-family: "宋体";
     font-size: 14px;
-    color: yellow;
-    background: #000;
 }
-img {
-    border: 2px solid red;
+header>a {
+    position: absolute;
+    height: 34px;
+    right: 35px;
+    bottom: 0;
+}
+@media (max-width: 1200px) {
+    header>a {
+        display: none;
+    }
+}
+
+#banner {
+    background-image: url(../img/banner-bg.jpg);
+    background-size: auto 500px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    min-width: 980px;
+    height: 400px;
+}
+#banner > div {
+    position: relative;
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+#banner .content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-indent: 2em;
+    text-align: right;
+    color: #fff;
+
+    background-image: linear-gradient(to bottom, 
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0.2) 75%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+#banner .content h2 {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+#banner .content p {
+    font-size: 12px;
+    line-height: 1.5em;
+    margin: 0;
+    text-align: justify;
+}
+
+.figure-text {
+    display: flex;
+    min-width: 980px;
+    flex-direction: row;
+    align-items: flex-start;    
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    background-color: #eee;
+}
+
+.figure-text div {
+    flex-shrink: 0;
+    width: 320px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+.figure-text img {
+    margin-bottom: 15px;
+}
+.figure-text p {
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 1.7em;
+    text-indent: 2em;
+    text-justify: justify;
+}
+.figure-text div:nth-child(1){
+    margin-left: 0;
 }
