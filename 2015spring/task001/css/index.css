@@ -1,0 +1,98 @@
+/* banner部分 */
+.banner {
+    position: relative;
+    min-width: 980px;
+}
+.banner .banner-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.banner .banner-content{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 400px;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-left: 90px;
+    color: #fff;
+    line-height: 1.5;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0.3) 75%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+.banner .banner-content h2 {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: right;
+    padding: 10px 0;
+}
+.banner .banner-content p {
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 2em;
+}
+/* figure-text部分 */
+.figure-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 10px;
+    padding-bottom: 150px;
+}
+.figure-text > div {
+    width: 320px;
+    padding: 10px;
+    padding-bottom: 25px;
+    background-color: #fff;
+}
+.figure-text img {
+    margin-bottom: 15px;
+}
+.figure-text p {
+    margin: 0 20px; 
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.7;
+}
+/* user部分 */
+.user {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background: #fff;
+}
+.user .user-avatar {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.user .user-avatar img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -120px;
+    margin-left: -260px;
+}
+.user h2 {
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.user p {
+    width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5;
+}
