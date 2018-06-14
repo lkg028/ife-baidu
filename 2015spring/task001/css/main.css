@@ -21,14 +21,16 @@ ul li {
     position: relative;
     width: 980px;
     margin: 0 auto;
-    overflow: hidden;
+}
+.clear-fix {
+    clear: both;
 }
 /* 设置页面首部 */
 header {
     position: relative;
     height: 100px;
     min-width: 980px;
-    background-color: purple;
+    background-color: #522a5c;
 }
 header nav {
     display: flex;
