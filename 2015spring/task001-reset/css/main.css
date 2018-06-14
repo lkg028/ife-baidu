@@ -14,10 +14,17 @@ ul {
 ul li {
     display: inline-block;
 }
+.container {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 /* 页面样式开始 */
 /* 页面头部 */
 header {
     position: relative;
+    min-width: 980px;
     height: 100px;
     background-color: purple;
     color: #fff;
@@ -46,17 +53,18 @@ header > a {
 }
 /* banner部分 */
 #banner {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 1300px;
-    height: 600px;
-    margin: 0 auto;
-    padding-right: 160px;
-    background-image: url(../img/banner-bg.jpg);
-    background-size: auto 100%;
+    min-width: 980px;
+    background-color: #f00;
+}
+#banner .banner-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 #banner .content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 500px;
     padding: 15px;
     background-image: linear-gradient(
@@ -70,6 +78,7 @@ header > a {
     display: flex;
     justify-content: center;
     align-items: stretch;
+    min-width: 980px;
     padding-top: 10px;
     padding-bottom: 200px;
     background-color: #ddd;
@@ -87,13 +96,62 @@ header > a {
 .user {
     min-width: 980px;
     padding-bottom: 200px;
-    background-color: #fff;
 }
 .user .user-avatar {
     position: relative;
     width: 200px;
     height: 200px;
-    margin: -30px auto 0 auto;
     border-radius: 100px;
+    margin: -40px auto 0 auto;
     overflow: hidden;
+}
+.user .user-avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -260px;
+    margin-top: -120px;
+}
+.user > h2 {
+    text-align: center;
+    margin: 40px auto;
+}
+.user > p {
+    width: 600px;
+    margin: 0 auto;
+}
+/* 页面底部 */
+footer {
+    background-color: #000; 
+    color: #fff;
+}
+footer .nav {
+    padding: 15px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+footer .nav li {
+    margin-left: 20px; 
+}
+footer .nav li:nth-child(1){
+    margin-left: 0;
+}
+/* 页面底部，友情链接 */
+footer .link {
+    padding: 20px 0;
+}
+footer .link > div {
+    float: left;
+    width: 150px;
+}
+footer .link > div li {
+    display: block;
+    
+}
+footer .copyright {
+    text-align: center;
+    padding: 15px;
+}
+footer .copyright p {
+    padding: 10px;
 }
