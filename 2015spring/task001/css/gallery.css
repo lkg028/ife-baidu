@@ -1,0 +1,120 @@
+/* 内容取和侧栏的布局，分成两列 */
+.main-content {
+    margin-top: 70px;
+    padding-bottom: 150px;
+}
+.main-content > aside {
+    float: right;
+    width: 300px;
+}
+.main-content > main {
+    
+    float: left;
+    width: 670px;
+    padding: 15px;
+    padding-bottom: 0;
+}
+/* 设置main内容样式 */
+main {
+    background-color: #fff;         
+}
+main nav {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    overflow: hidden;
+}
+main nav li {
+    float: left;
+    height: 45px;
+    background-color: #fff;
+    font-size: 14px;
+}
+main nav li a {
+    display: block;
+    height: 100%;
+    padding: 20px;
+    padding-top: 15px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-top-width: 3px;
+    border-top-style: solid;
+}
+main nav li a{border-top-color: rgba(82, 42, 92, 0.5);}
+main nav li a:hover,
+main nav li a.selected{border-top-color: rgba(82, 42, 92, 1); border-bottom: 1px solid #fff;}
+
+main #figure-text {
+    display: flex;
+    justify-content: space-around;
+}
+main #figure-text > div {
+}
+main #figure-text .col-2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+}
+main #figure-text figure {
+    position: relative;
+    width: 150px;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: purple;
+    overflow: hidden;
+}
+main #figure-text figure.first {
+    width: 310px;
+}
+#figure-text figure > div {
+   float: left;
+}
+#figure-text figure .tag {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+}
+#figure-text figure .text {
+    width: 70%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+#figure-text figure .text h2 {
+    font-weight: normal;
+    font-size: 16px;
+}
+main .main-footer {
+    box-sizing: content-box;
+    height: 40px;
+    line-height: 40px;
+    min-width: 100%;
+    margin-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border: 10px solid #eee;
+    border-left: none;
+    border-right: none;
+    background-color: #fff;
+}
+main .main-footer a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #666;
+}
+/* 侧栏设置 */
+aside > div{
+    background-color: #fff;
+}
+aside #search-box {
+    padding: 20px;
+}
