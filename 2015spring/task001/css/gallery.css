@@ -118,3 +118,63 @@ aside > div{
 aside #search-box {
     padding: 20px;
 }
+aside #search-box form {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid #eee;
+}
+aside #search-box form > * {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+aside #search-box form input[type="submit"] {
+    width: 40px;
+}
+aside #rank {
+    padding: 15px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    color: purple;
+    font-size: 14px;
+}
+aside #rank h3 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+aside #rank ol {
+    list-style-type: none;
+}
+aside #rank li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+aside #rank li span {
+    display: inline-block;
+}
+aside #rank ol span.li-type{
+    height: 20px;
+    width: 20px;
+    color: #fff;
+    background-color: purple;
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+aside #rank ol span:nth-child(2){
+    border: 1px solid purple;
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+aside #rank ol span#bar {
+    background-color: purple;
+    height: 18px;
+}
