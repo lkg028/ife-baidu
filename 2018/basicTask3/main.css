@@ -1,0 +1,14 @@
+/*初始化样式*/
+* {
+    box-sizing: border-box;
+}
+
+/*页面整体字体和背景颜色*/
+html {
+    background-color: #5a5e61;
+    /*字体待定*/
+}
+body {
+    background-color: white;
+    
+}
