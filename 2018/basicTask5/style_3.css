@@ -1,0 +1,86 @@
+/*初始化样式*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*字体&背景色&前景色*/
+html {
+    background-color: black;
+    font-size: 10px;
+}
+
+article h1 {
+    font-size: 2.5em;
+    text-align: left;
+    background-color: #868686;
+    color: white;
+}
+
+section h2,
+section h3,
+section p {
+    font-size: 2em;
+    color: black;
+}
+section p span {
+    font-weight: bold;
+}
+
+section {
+    background-color: white;
+}
+section h2 {
+    background-color: #d6d6d6;
+}
+/*布局&盒子样式*/
+body {
+    width: 980px;
+    margin: 40px auto;
+}
+
+article h1 {
+    padding-left: 20px;
+    height: 80px;
+    line-height: 80px;
+}
+
+section {
+    width: 100%;
+    float: left;
+    border: 1px solid #d6d6d6;
+}
+
+section h2 {
+    float: left;
+    width: 15%;
+    text-align: center;
+    height:     150px;
+    line-height: 150px;
+    border-bottom: 1px solid white;
+}
+
+section.basic p,
+section.contact p{
+    float: left;
+    padding-right: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+section h3,
+section p {
+    float: left;
+}
+
+section.other h3 {
+    width: 13%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+section.other p {
+    width: 70%;
+    padding-top: 20px;
+
+}
