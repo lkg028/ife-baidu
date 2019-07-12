@@ -1,6 +1,7 @@
 /*初始化样式*/
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 /*页面整体字体和背景颜色*/
@@ -10,5 +11,36 @@ html {
 }
 body {
     background-color: white;
-    
+    width: 980px;
+    margin: 40px auto;
+    padding: 50px 60px;
+    font-size: 10px;
 }
+
+article > section {
+    margin-bottom: 30px;
+}
+
+section > h2 {
+    font-size: 2.5em;
+    letter-spacing: .2em;
+    margin-bottom: 15px;
+}
+
+section p,
+section dt,
+section dd {
+    font-size: 1.8em;
+    line-height: 1.5;
+}
+
+.basic img {
+    float: right;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    margin-top: -25px;
+}
+
+footer {
+    border-top: 1px solid black;
