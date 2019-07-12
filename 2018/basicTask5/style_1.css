@@ -1,0 +1,17 @@
+/*初始化样式*/
+* {
+    box-sizing: border-box;
+}
+
+/*基本排版样式*/
+section {
+    margin-bottom: 30px;
+}
+
+section h3{
+    margin-bottom: 0;
+}
+
+section h3 + p {
+    margin-top: 0;
+}
