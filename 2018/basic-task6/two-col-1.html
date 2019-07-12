@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>两栏布局</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="two-col-1.css">
+    </head>
+    <body>
+        <h3>一、两个盒子同时设置float：left；width；同时包含元素设置：overflow: auto;</h3>
+        <div class="container-1">
+            <div><p>left 固定宽度为30%,这里设置了float：left；width：30%；</p></div>
+            <div><p>right 固定宽度为70%这里设置了float：left；width：70%；</p></div>
+        </div>
+
+        <hr>
+        <h3>二、两个盒子同时设置display：inline-block；</h3>
+        <p>优点是不需要清除浮动</p>
+        <p>缺点是需要去除字符分割符,还要设置vertical-align：top</p>
+        <div class="container-2">
+            <div><p>left 固定宽度为30%,这里设置了float：left；width：30%；</p></div><div><p>right 固定宽度为70%这里设置了float：left；width：70%；</p></div>
+            
+        </div>
+        <hr>
+        <h3>三、position：absolute</h3>
+        <p>缺点：高度无法自适应，这是容器高度设置了500px;</p>
+        <div class="container-3">
+            <div>left<br>实现一个两栏布局，左侧占30%宽度，右侧占70%宽度。<br>实现一个两栏布局，左侧占30%宽度，右侧占70%宽度</div>
+            <div>left<br>实现一个两栏布局，左侧占30%宽度，右侧占70%宽度。<br>实现一个两栏布局，左侧占30%宽度，右侧占70%宽度</div>
+        </div>
+        <hr>
+        <h3>四、使用弹性盒子</h3>
+        <div class="container-4">
+            <div>left<br>这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。</div>
+            <div>left<br>这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。</div>
+        </div>
+    </body>
+</html>
