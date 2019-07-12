@@ -15,6 +15,9 @@ body {
     margin: 40px auto;
     padding: 50px 60px;
     font-size: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7),
+    -3px -3px 5px rgba(0,0,0,0.7)
+    ;
 }
 
 article > section {
