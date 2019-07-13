@@ -1,0 +1,92 @@
+/*初始化*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    background: gray;
+}
+body {
+    width: 80%;
+    min-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+body > div {
+    overflow: auto;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+div > div:nth-child(2) {
+    width: 300px;
+    border: 2px solid orange;
+}
+div > div:nth-child(1) {
+    border: 2px solid red;
+}
+
+/*使用float:left、position和margin和padding*/
+.container-1 {
+    padding-right: 300px;
+}
+.container-1 div:nth-child(1) {
+    float: left;
+    width: 100%;
+}
+.container-1 div:nth-child(2) {
+    float: left;
+    margin-left: -300px;
+    position: relative;
+    right: -300px;
+}
+
+/*二、使用inlineblock*/
+.container-2 {
+    font-size: 0;
+    padding-right: 300px;
+}
+
+.container-2 div {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.container-2 div:nth-child(1) {
+    width: 100%;
+}
+
+.container-2 div:nth-child(2) {
+    margin-left: -300px;
+    position: relative;
+    right: -300px;
+}
+
+/*三、左侧margin-right，右侧absolute*/
+.container-3 {
+    position: relative;
+    min-height: 110px;
+}
+.container-3 div:nth-child(1) {
+    margin-right: 300px;
+}
+.container-3 div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*四、使用弹性盒子*/
+.container-4 {
+    display: flex;
+    align-items: flex-start;
+}
+.container-4 div:nth-child(1) {
+    flex: 1 1 auto;
+}
+.container-4 div:nth-child(2) {
+    flex: 0 0 auto;
+}

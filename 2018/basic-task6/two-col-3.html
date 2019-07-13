@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>两栏布局-左侧固定宽度，右侧自适应</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="two-col-3.css">
+    </head>
+    <body>
+        <h3>一、使用float:left、position和margin和padding</h3>
+        <p>①左右两个盒子左浮动，左盒子width：100%，容器padding-right：300px；</p>
+        <p>②右盒子margin-left：-300px，relative right：-300px；</p>
+        <div class="container-1">
+            <div><p>left left left left left left left left left left left left left left left left left left left left left</p></div>
+            <div><p>right right right right right right right right right right right right right right right right right right right</p></div>
+        </div>
+
+        <hr>
+        <h3>二、设置成inline-block</h3>
+        <div class="container-2">
+            <div><p>left left left left left left left left left left left left left left left left left left left left left</p></div>
+            <div><p>right right right right right right right right right right right right right right right right right right right</p></div>
+        </div>
+        <hr>
+        <h3>三、左侧margin-right，右侧absolute</h3>
+        <p>缺点：高度无法自适应，这是容器高度设置了min-height:110px;</p>
+        <div class="container-3">
+            <div><p>left left left left left left left left left left left left left left left left left left left left left</p></div>
+            <div><p>right right right right right right right right right right right right right right right right right right right</p></div>
+        </div>
+        <hr>
+        <h3>四、使用弹性盒子</h3>
+        <div class="container-4">
+            <div><p>left left left left left left left left left left left left left left left left left left left left left</p></div>
+            <div><p>right right right right right right right right right right right right right right right right right right right</p></div>
+        </div>
+    </body>
+</html>
