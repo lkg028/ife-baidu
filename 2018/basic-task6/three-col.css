@@ -1,0 +1,103 @@
+/*初始化*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    background-color: gray;
+}
+body {
+    background-color: white;
+    width: 80%;
+    min-width: 750px;
+    margin: 20px auto;
+}
+body > div {
+    overflow: auto;
+}
+.main {
+    background-color: red;
+}
+.left {
+    background-color: blueviolet;
+}
+.right {
+    background-color: coral;
+
+}
+
+/*圣杯布局*/
+.container-1 .main,
+.container-1 .left,
+.container-1 .right {
+    float: left;
+}
+.container-1 .main {
+    width: 100%;
+}
+
+.container-1 .left {
+    margin-left: -100%;
+    width: 200px;
+    position: relative;
+    left: -200px
+}
+.container-1 .right {
+    margin-left: -150px;
+    width: 150px;
+    position: relative;
+    right: -150px;
+}
+.container-1 {
+    padding-left: 200px;
+    padding-right: 150px;
+}
+
+/*双飞翼布局*/
+.container-2 .wrap {
+    width: 100%;
+}
+
+.container-2 .main {
+    margin-left: 200px;
+    margin-right: 150px;
+}
+
+.container-2 .wrap,
+.container-2 .left,
+.container-2 .right {
+    float: left;
+}
+.container-2 .left {
+    width: 200px;
+    margin-left: -100%;
+}
+.container-2 .right {
+    width: 150px;
+    margin-left: -150px;
+}
+/*第一第二列固定宽度，第三列自适应*/
+.container-3 {
+    padding-left: 350px;
+}
+.container-3 .main {
+    float: left;
+    width: 100%;
+}
+
+.container-3 .left,
+.container-3 .right {
+    float: left;
+    margin-left: -100%;
+}
+.container-3 .left {
+    width: 200px;
+    position: relative;
+    left: -350px;
+}
+.container-3 .right {
+    width: 150px;
+    position: relative;
+    left: -150px;
+}
