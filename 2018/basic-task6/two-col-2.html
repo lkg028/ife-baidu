@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>两栏布局-左侧固定宽度，右侧自适应</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="two-col-2.css">
+    </head>
+    <body>
+        <h3>一、左侧浮动，右侧margin</h3>
+        <div class="container-1">
+            <div><p>左侧浮动，右侧margin。<br>左侧浮动，右侧margin。<br>左侧浮动，右侧margin。<br></p></div>
+            <div>左侧浮动，右侧margin。左侧浮动，右侧margin。左侧浮动，右侧margin。<br></p></div>
+        </div>
+
+        <hr>
+        <h3>二、设置成inline-block</h3>
+        <div class="container-2">
+            <div><p>设置成inline-block。<br>设置成inline-block。<br>设置成inline-block。<br>设置成inline-block。<br></p></div><div>
+                <p>设置成inline-block。设置成inline-block。设置成inline-block。</p></div>
+            
+        </div>
+        <hr>
+        <h3>三、这是左absolute，右侧marginleft</h3>
+        <p>缺点：高度无法自适应，这是容器高度设置了500px;</p>
+        <div class="container-3">
+            <div>left<br>这是左absolute，右侧marginleft。<br>这是左absolute，右侧marginleft。</div>
+            <div>right<br>这是左absolute，右侧marginleft。这是左absolute，右侧marginleft。</div>
+        </div>
+        <hr>
+        <h3>四、使用弹性盒子</h3>
+        <div class="container-4">
+            <div>left<br>这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。</div>
+            <div>left<br>这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。这里使用弹性盒子。</div>
+        </div>
+        <hr>
+        <h3>五、左侧float，右侧BFC</h3>
+        <div class="container-5">
+            <div>left<br>左侧float，右侧BFC。<br>左侧float，右侧BFC。<br>左侧float，右侧BFC。<br>左侧float，右侧BFC。<br></div>
+            <div>right<br>左侧float，右侧BFC。左侧float，右侧BFC。左侧float，右侧BFC。左侧float，右侧BFC。</div>
+        </div>
+    </body>
+</html>
