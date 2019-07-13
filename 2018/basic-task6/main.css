@@ -1,0 +1,169 @@
+/*初始化样式*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+/*整体容器布局*/
+.container {
+    width: 100%;
+    min-width: 960px;
+}
+.container > .content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*header*/
+header {
+    background-color: #333332;
+    height: 80px;
+}
+
+header img {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+header li {
+    display: inline-block;
+}
+
+header ul {
+    float: right;
+}
+
+header ul a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: underline;
+}
+
+header ul a:hover,
+header ul a:focus,
+header ul a:active {
+    font-weight: bold;
+}
+
+/*banner*/
+.banner {
+    background-color: #66bb33;
+    overflow: auto;
+}
+.banner-img {
+    width: 100%;
+    height: 300px;
+}
+
+.banner ul {
+    float: right;
+    width: 150px;
+    height: 70px;
+    margin-top: -80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.banner ul li a{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    font-size: 1.5em;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0.7;
+    line-height: 40px;
+}
+
+.banner ul li a:hover,
+.banner ul li a:focus,
+.banner ul li a:active,
+.banner ul li a.selected {
+    opacity: 1;
+    padding-top: 10px;
+    height: 50px;
+}
+
+/*导航*/
+nav.container {
+    border-bottom: 1px solid #aaa;
+}
+nav .content {
+    display: flex;
+    height: 70px;
+    align-items: flex-end;
+}
+nav.container ul {
+    margin-bottom: -1px;
+    font-size: 0;
+}
+
+nav.container li {
+    display: inline-block;
+}
+nav.container li a {
+    display: inline-block;
+    font-size: 15px;
+    border: 1px solid #aaa;
+    padding: 10px;
+    width: 90px;
+    text-align: center;
+    color: black;
+    background-color: #eee;
+    text-decoration: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+nav.container li a:hover,
+nav.container li a:focus,
+nav.container li a:active,
+nav.container li a.selected {
+    background-color: white;
+    border-bottom: 1px solid white;
+}
+
+/*主要内容区域*/
+main .content {
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 20px 0;
+}
+
+main .content > div {
+    height: 100px;
+    padding: 80px;
+    margin-right: 10px;
+    border: 1px solid #aaa;
+    flex: 1 1 auto;
+}
+
+/*footer部分*/
+footer {
+    height: 80px;
+    background-color: #333332;
+}
+
+footer p{
+    color: white;
+    font-size: 1.5em;
+    padding-top: 20px;
+    text-align: center;
+}
