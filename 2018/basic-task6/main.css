@@ -88,6 +88,8 @@ header ul a:active {
     text-align: center;
     opacity: 0.7;
     line-height: 40px;
+    transition:0.5s all;
+
 }
 
 .banner ul li a:hover,
@@ -128,6 +130,9 @@ nav.container li a {
     text-decoration: none;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    transition:0.6s all;
+
+
 }
 
 nav.container li a:hover,

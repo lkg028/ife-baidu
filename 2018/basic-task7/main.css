@@ -1,0 +1,493 @@
+/*初始化样式*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body {
+     font-size: 10px;
+ }
+ .container {
+     width: 100%;
+     min-width:     1000px;
+ }
+ .container > .content {
+     width: 950px;
+     margin: 0 auto;
+ }
+
+ /*header部分*/
+ header.container {
+     color: white;
+     line-height: 1.5;
+     overflow: hidden;
+     height: 580px;
+     background-image: url(images/header-bg-0.png), url(images/header-bg.png);
+     background-repeat: repeat-x, no-repeat;
+     background-position: 50% 50%;
+     background-color: #616161;
+ }
+header.container h2 {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 3em;
+}
+header.container .text p {
+    width: 800px;
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+
+header.container form.content {
+    font-size: 1.5em;
+    padding: 30px;
+    border: 1px solid #aaa;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+header.container form h3 {
+    margin: 10px; 
+    letter-spacing: .2em;
+}
+header.container form p {
+    margin-bottom: 30px;
+    color: gray;
+}
+
+header.container form input,
+header.container form button {
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 1px;
+    vertical-align: middle;
+    outline: none;
+}
+header.container form input {
+    background-color: inherit;
+    color: white;
+    margin-right: 15px;
+    width: 200px;
+}
+
+header.container form button {
+    color: black;
+    background-color: white;
+}
+
+header.container form button:hover,
+header.container form button:focus,
+header.container form button:active {
+    background-color: #aaa;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+/*awesome features部分*/
+.features .first-box h2{
+    font-size: .8em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.features .first-box p{
+    text-align: center;
+    font-size: 2em;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
+.features .second-box {
+    font-size: 1.5em;
+    height: 250px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.features .second-box > div {
+    width: 350px;
+    display: inline-block;
+    text-align: justify;
+    padding-left: 60px;
+}
+.features .second-box > div h3 {
+    margin-bottom: 10px;
+}
+
+.features .second-box > div p {
+    margin-bottom: 40px;
+    color: #616161;
+}
+.features .second-box > div:nth-child(1) {
+    background-image: url(images/Iphone-Icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.features .second-box > div:nth-child(2) {
+    background-image: url(images/Check-Icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.features .second-box > div:nth-child(3) {
+    background-image: url(images/Pencil-Icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.features .second-box > div:nth-child(4) {
+    background-image: url(images/Settings-Icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+/*Supportive*/
+.supportive {
+    background-image: url(images/supportive-bg-0.png),
+                      url(images/supportive-bg.png);
+    background-repeat: repeat-x, no-repeat;
+    background-position: 50% 50%;
+    background-color: #616161;
+    overflow: hidden;
+    position: relative;
+}
+.supportive .first-box {
+    line-height: 1.5;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: left;
+
+    background-image: url(images/ipad-screen.png);
+    background-repeat: no-repeat;
+    background-position: 500px 80px;
+    overflow: hidden;
+}
+.supportive .first-box h2 {
+    font-size: 2em;
+    color: white;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.supportive .first-box p {
+    font-size: 1em;
+    color: white;
+    width: 250px;
+    margin-bottom: 20px;
+}
+.supportive .first-box button {
+    font-size: 1em;
+    width: 180px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid #aaa;
+    outline: none;
+}
+.supportive .first-box button:hover,
+.supportive .first-box button:focus,
+.supportive .first-box button:active {
+    background-color: #616161;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s all;
+}
+.supportive .second-box {
+    position: absolute;
+    right: -10%;
+}
+
+/*products部分*/
+ .products h2{
+    font-size: 2em;
+    text-align: center;
+    padding: 40px;
+ }
+ .products .info-box {
+     display: flex;
+     justify-content: space-between;
+     padding-bottom: 40px;
+ }
+ .products .info-box > div {
+     width: 200px;
+     line-height: 1.5;
+     text-align: center;
+ }
+
+ /*img-info部分*/
+ .img-info {
+     padding-top: 80px;
+     padding-bottom: 80px;
+     border-top: 1px solid #aaa;
+     border-bottom: 1px solid #aaa;
+     overflow: auto;
+     font-size: 1.5em;
+     line-height: 1.5;
+ }
+
+ .img-info > div {
+     overflow: auto;
+ }
+
+ .img-info img {
+     display: inline-block;
+ }
+
+ .img-info .first-box img {
+     float: left;
+     margin-bottom: 60px;
+     margin-right: 50px;
+ }
+ .img-info .second-box img {
+    float: right;
+    margin-left: 50px;
+}
+
+.img-info h3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.img-info p {
+    color: gray;
+}
+
+/*Crew区*/
+
+.crew {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #aaa;
+}
+
+.crew .first-box h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.crew .first-box p{
+    font-size: 1.5em;
+    color: gray;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.crew .second-box {
+    height: 700px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.crew .second-box > div{
+    overflow: hidden;
+    width: 450px;
+    height: 320px;
+}
+.crew-info:hover,
+.crew-info:focus,
+.crew-info:active {
+    cursor: pointer;
+}
+
+
+.crew-info .crew-link {
+    width: 450px;
+    height: 320px;
+    padding-top: 110px;
+    background-image: url(images/crew-link-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    transition: 0.5s all;
+}
+
+.crew-info .crew-link h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.crew-info .crew-link p {
+    font-size: 1.5em;
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.crew-info .crew-link ul {
+    width: 180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.crew-info .crew-link a {
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.crew-info .crew-link a img {
+    vertical-align: middle;
+}
+
+.crew-info:hover .crew-link,
+.crew-info:focus .crew-link,
+.crew-info:active  .crew-link{
+    position: relative;
+    top: -323px;
+    
+}
+
+/*visitor区*/
+.visitor {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: auto;
+}
+
+.visitor .content {
+    text-align: justify;
+}
+
+.visitor .content > div {
+    width: 400px;
+    float: right;
+}
+
+.visitor .content > form {
+    width: 400px;
+    float: left;
+    padding: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.visitor form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.visitor form input,
+.visitor form textarea,
+.visitor form button {
+    width: 320px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+    outline: none;
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+
+.visitor form input,
+.visitor form button {
+    height: 30px;
+}
+
+.visitor form textarea {
+    resize: none;
+}
+
+.visitor form button  {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.visitor .contact h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.visitor .contact h3 + p {
+    font-size: 1.5em;
+    color: #616161;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.visitor .contact .addr,
+.visitor .contact .phone,
+.visitor .contact .email {
+    width: 240px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    line-height: 2;
+    background-repeat: no-repeat;
+}
+.visitor .contact .addr {
+    background-image: url(images/Map-Icon.png);
+
+}
+.visitor .contact .phone {
+    background-image: url(images/Phone-Icon20.png);
+}
+.visitor .contact .email {
+    background-image: url(images/Mail-Icon.png);
+}
+
+/*footer区 */
+footer {
+    background-color: #141414;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer .content {
+    width: 980px !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .content .link {
+    display: inline-block;
+}
+
+footer .content .link ul {
+    list-style-type: none;
+}
+
+footer .content .link h3,
+footer .content .link p,
+footer .content .link li {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+footer .content .share {
+    width: 230px;
+}
+
+footer .content .link a,
+footer .content .link p {
+    text-decoration: none;
+    color: #616161;
+}
