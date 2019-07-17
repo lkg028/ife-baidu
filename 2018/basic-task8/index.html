@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>一个即时通信界面</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="aside.css">
+    </head>
+    <body>
+        <!--主要内容区，右侧白色区域-->
+        <main>
+            <!--主要内容的头部-->
+            <header>
+                <h1>Messages</h1>
+                <div id="user-info">
+                    <div><img src="images/Photo.png" alt="user img"></div>
+                    <div>
+                        <p class="user-name">Jordan J.</p>
+                        <p class="user-duty">Administator</p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/dropdown.png" alt=""></a>
+                    </div>
+                </div>
+            </header>
+
+            <!--消息框-->
+            <div id="dialog">
+
+                <!--整个好友列表-->
+                <div id="friend-area">
+                    <!--搜索框-->
+                    <div class="search">
+                        <input type="text" name="search-str" id="" placeholder="Search"><button></button>
+                    </div><!--【结束】搜索框-->
+
+                    <!--好友列表，展示每个好友-->
+                    <div class="friends-box">
+                        <div class="friend">
+                            <div class="friend-info">
+                                <span></span>
+                                <div>
+                                    <p class="friend-name">Bessie Berry<span class="time">3m</span></p>
+                                    <p class="friend-origin">Twitter</p>
+                                </div>
+                            </div>
+                            <div class="msg-abstract">
+                                <p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...</p>
+                                <p>4</p>
+                            </div>
+                        </div>
+                        <div class="friend">
+                                <div class="friend-info">
+                                    <span></span>
+                                    <div>
+                                        <p class="friend-name">Bessie Berry<span class="time">3m</span></p>
+                                        <p class="friend-origin">Twitter</p>
+                                    </div>
+                                </div>
+                                <div class="msg-abstract">
+                                    <p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...</p>
+                                    
+                                </div>
+                        </div>
+                        <div class="friend">
+                                <div class="friend-info">
+                                    <span></span>
+                                    <div>
+                                        <p class="friend-name">Bessie Berry<span class="time">3m</span></p>
+                                        <p class="friend-origin">Twitter</p>
+                                    </div>
+                                </div>
+                                <div class="msg-abstract">
+                                    <p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...</p>
+                                    
+                                </div>
+                        </div>
+                        <div class="friend">
+                                <div class="friend-info">
+                                    <span></span>
+                                    <div>
+                                        <p class="friend-name">Bessie Berry<span class="time">3m</span></p>
+                                        <p class="friend-origin">Twitter</p>
+                                    </div>
+                                </div>
+                                <div class="msg-abstract">
+                                    <p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...</p>
+                                    
+                                </div>
+                        </div>
+                        <div class="friend">
+                                <div class="friend-info">
+                                    <span></span>
+                                    <div>
+                                        <p class="friend-name">Bessie Berry<span class="time">3m</span></p>
+                                        <p class="friend-origin">Twitter</p>
+                                    </div>
+                                </div>
+                                <div class="msg-abstract">
+                                    <p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...</p>
+                                    
+                                </div>
+                        </div>
+                        <div class="friend">
+                                <div class="friend-info">
+                                    <span></span>
+                                    <div>
+                                        <p class="friend-name">Bessie Berry<span class="time">3m</span></p>
+                                        <p class="friend-origin">Twitter</p>
+                                    </div>
+                                </div>
+                                <div class="msg-abstract">
+                                    <p>I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...</p>
+                                    
+                                </div>
+                        </div>
+                    </div><!--【结束】好友列表，展示每个好友-->
+
+                </div><!--【结束】整个好友列表-->
+
+                <!--聊天框-->
+                <div id="msg-area">
+                    <!--聊天框，头部-->
+                    <div class="msg-header">
+                        <p class="name">Bssie Berry</p>
+                        <div class="btn-group">
+                            <div class="ctr-btn">
+                                <a href="#"><img src="images/User-icon.png" alt=""></a>
+                                <a href="#"><img src="images/Upload-icon.png" alt=""></a>
+                                <a href="#"><img src="images/Trash-icon.png" alt=""></a>
+                            </div>
+                            <div class="page-btn">
+                                <span>1 of 28</span>
+                                <a href="#"><img src="images/Arrow-left.png" alt=""></a>
+                                <a href="#"><img src="images/Arrow-right.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div><!--【结束】聊天框，头部-->
+
+                    <!--聊天框，具体消息列表-->
+                    <div class="msgs-box">
+                        <div class="msg">
+                            <span class="friend-face"><img src="images/Face0.png" alt=""></span>
+                            <h3>Bessie Berry<span class="time">8:31 AM</span></h3>
+                            <p>Hi guys Ive got the O2 package and have really slow internet. 
+                                A speed check online said i can get 3mbps but it seems more like 0.5 these days, 
+                                just freezing and taking ages to open pages and open audio files for example. 
+                                I have decided to switch to the UPC package which offers 10mbps but do you think i will get it?</p>
+                        </div>
+                        <div class="msg">
+                                <span class="friend-face"><img src="images/Face1.png" alt=""></span>
+                                <h3>Jordan Jackson<span class="time">8:31 AM</span></h3>
+                                <p>I have internet for 9 month and nevere could benefit from the full capacity of 
+                                    5Mbit/s as it is filtered by O2 when it detect traffic on public p2p sharing in my 
+                                    situation all my internet speed slows to 512Kbit/s. I never had 400KB/s on when downloading 
+                                    from p2p public servers like torrent emule etc. I downoad with 500KB/s from private trakers 
+                                    instead. So conlcusion O2 block trafic on p2p connections. I have made hundreds of test in 
+                                    Italy and Sweden and Romania with the same file to doanload with the same setting and same 
+                                    antivirus and just needed to open ports in firewall and forward same ports and the speed was 
+                                    at full capacity in 1 minute. here in 9 month never had this luck.</p>
+                        </div>
+                        <div class="time-line">
+                            <span>Tuesday</span>
+                        </div>
+                        <div class="msg">
+                                <span class="friend-face"><img src="images/Face0.png" alt=""></span>
+                                <h3>Bessie Berry<span class="time">8:31 AM</span></h3>
+                                <p>Hi guys Ive got the O2 package and have really slow internet. 
+                                    A speed check online said i can get 3mbps but it seems more like 0.5 these days, 
+                                    just freezing and taking ages to open pages and open audio files for example. 
+                                    I have decided to switch to the UPC package which offers 10mbps but do you think i will get it?</p>
+                        </div>
+                        <div class="msg">
+                                    <span class="friend-face"><img src="images/Face1.png" alt=""></span>
+                                    <h3>Jordan Jackson<span class="time">8:31 AM</span></h3>
+                                    <p>I have internet for 9 month and nevere could benefit from the full capacity of 
+                                        5Mbit/s as it is filtered by O2 when it detect traffic on public p2p sharing in my 
+                                        situation all my internet speed slows to 512Kbit/s. I never had 400KB/s on when downloading 
+                                        from p2p public servers like torrent emule etc. I downoad with 500KB/s from private trakers 
+                                        instead. So conlcusion O2 block trafic on p2p connections. I have made hundreds of test in 
+                                        Italy and Sweden and Romania with the same file to doanload with the same setting and same 
+                                        antivirus and just needed to open ports in firewall and forward same ports and the speed was 
+                                        at full capacity in 1 minute. here in 9 month never had this luck.</p>
+                        </div>
+                        <div class="time-line">
+                                <span>Tuesday</span>
+                        </div>
+                        <div class="msg">
+                                <span class="friend-face"><img src="images/Face0.png" alt=""></span>
+                                <h3>Bessie Berry<span class="time">8:31 AM</span></h3>
+                                <p>Hi guys Ive got the O2 package and have really slow internet. 
+                                    A speed check online said i can get 3mbps but it seems more like 0.5 these days, 
+                                    just freezing and taking ages to open pages and open audio files for example. 
+                                    I have decided to switch to the UPC package which offers 10mbps but do you think i will get it?</p>
+                        </div>
+                    </div><!--【结束】聊天框，具体消息列表-->
+
+                    <!--聊天框，尾部-->
+                    <div class="footer">
+                        <button>按钮</button><input type="text" 
+                        value="Well, kinda both :) but more of that second option, i`ve seen many systems infected and crawling with">
+                    </div><!--【结束】聊天框，尾部-->
+
+                </div><!--【结束】聊天框-->
+            </div><!--【结束】消息框-->
+
+        </main><!--【结束】主要内容区，右侧白色区域-->
+
+        <!--侧栏，左侧固定栏-->
+        <aside>
+            <!--左侧栏-->
+            <div class="aside-left">
+                <ul class="share">
+                    <li><a href="#"><img src="images/Item-1.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/Item-2.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/Item-3.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/Item-4.png" alt=""></a></li>
+                </ul>
+                <div class="ctr-btn">
+                    <a href="#"><img src="images/Grid.png" alt=""></a>
+                    <a href="#"><img src="images/Settings.png" alt=""></a>
+                </div>
+            </div>
+            <!--右侧栏-->
+            <div class="aside-right">
+                <div class="menu">
+                    <h3>MENU<a href="#"><img src="images/Settings.png" alt=""></a></h3>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Sales</a><span>54</span></li>
+                        <li><a href="#">Your Staff</a></li>
+                        <li><a href="#">Analytics & Targeting</a></li>
+                        <li><a href="#">What’s New</a></li>
+                    </ul>
+                </div>
+                <div class="products">
+                    <h3>YOUR PRODUCTS<a href="#"><img src="images/Settings.png" alt=""></a></h3>
+                    <ul>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Stocks</a></li>
+                        <li><a href="#">Infographics</a></li>
+                    </ul>
+                </div>
+                <div class="dashboard">
+                    <h3>DASHBOARD<a href="#"><img src="images/Settings.png" alt=""></a></h3>
+                    <ul>
+                        <li><a href="#">Messages</a><span class="dot"></span><span class="status-num">21</span></li>
+                        <li><a href="#">Connections</a></li>
+                        <li><a href="#">Integrations</a><span  class="status-symbol">!</span></li>
+                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="#">App Settings</a></li>
+                    </ul>
+                </div>
+                <div class="monthly">
+                    <p>Monthly Goals <a href="#">$580/$3200</a></p>
+                    <div class="progress">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </body>
+</html>
