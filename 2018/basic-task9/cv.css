@@ -1,0 +1,93 @@
+/*初始化样式*/
+* {
+    box-sizing: border-box;
+}
+
+/*基本排版样式*/
+html {
+    background-color: dimgray;
+    font-size: 10px;
+}
+
+article h1 {
+    font-size: 4em;
+}
+
+article h2 {
+    font-size: 3.5em;
+}
+
+article h3,
+article p {
+    font-size: 2.5em;
+}
+
+body {
+    width: 70%;
+    min-width: 980px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+article {
+    background-color: #6ba6fa;
+}
+
+section {
+    padding-bottom: 30px;
+    padding-left: 40px;
+    background-color: white;
+    float: right;
+    width: 75%;
+}
+
+article h1 {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+
+section h3{
+    margin-bottom: 0;
+}
+
+section h3 + p {
+    margin-top: 0;
+}
+
+section.basic p,
+section.contact p{
+    float: left;
+    margin-right: 40px;
+}
+
+section.basic span,
+section.contact span{
+    font-weight: bold;
+}
+
+/*微信二维码*/
+p#weichat-p {
+    position: relative;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display: inline-block;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: -320px;
+    top: -125px;
+    box-shadow: 3px 3px 5px black,
+                -3px -3px 5px black;
+    border-radius: 5px;
+    transition: 1s all;
+}
