@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>第二十到第二十一天：让你和页面对话</title>
+        <style>
+            .palette {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .palette li {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000;
+            cursor: pointer;
+            
+        }
+        #sprites {
+            width: 480px;
+            height: 480px;
+            overflow: hidden;
+            background-image: url("images/sprites.jpg"); 
+            background-repeat: no-repeat;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>获取输入框的内容</h2>
+            <p>打开控制台查看</p>
+            <p>一、点击按钮输出</p>
+            <p>二、回车键输出</p>
+            <p>三、esc键清空</p>
+            <input id="name" type="text">    
+            <button id="submit-btn">Submit</button>
+        </div>
+        <hr>
+        <div>
+            <h2>控制元素的显示和隐藏</h2>
+            <p>当用户选择了 School 的单选框时，显示 School 的下拉选项，隐藏 Company 的下拉选项
+                <br>当用户选择了 School 的单选框时，显示 Company 的下拉选项，隐藏 School 的下拉选项</p>
+                <label>
+                    <input id="school" name="status" type="radio">
+                    School
+                </label>
+                <label>
+                    <input id="company" name="status" type="radio">
+                    Company
+                </label>
+            
+                <select id="school-select">        
+                    <option>北京邮电大学</option>
+                    <option>黑龙江大学</option>
+                    <option>华中科技大学</option>
+                </select>
+            
+                <select id="company-select">        
+                    <option>百度</option>
+                    <option>爱奇艺</option>        
+                </select>
+        </div>
+        <hr>
+        <div>
+            <h2>点击选择背景色</h2>
+            <p>点击某一个 Li 标签时，将 Li 的背景色显示在 P 标签内，并将 P 标签中的文字颜色设置成 Li 的背景色</p>
+            <ul class="palette">
+                <li style="background-color:crimson"></li>
+                <li style="background-color:bisque"></li>
+                <li style="background-color:blueviolet"></li>
+                <li style="background-color:coral"></li>
+                <li style="background-color:chartreuse"></li>
+                <li style="background-color:darkolivegreen"></li>
+                <li style="background-color:cyan"></li>
+                <li style="background-color:#194738"></li>        
+            </ul>
+            <p class="color-picker">这是一个段落。</p>
+        </div>
+        <hr>
+        <div>
+            <h2>使用超时调用实现淡入淡出的动画</h2>
+            <div id="fade-obj" style="width:300px;height:300px;background:red;opacity:1"></div>
+            <button id="fade-btn">淡出</button>
+        </div>
+        <hr>
+        <div>
+            <h2>使用雪花图实现一个动画</h2>
+            <div id="sprites"></div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
