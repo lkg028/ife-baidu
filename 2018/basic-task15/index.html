@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>第二十八天到第三十天 给爱的人发个邮件吧</title>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <style>
+            body{
+                font-size: 10px;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .wrapper {
+                position: relative;
+            }
+            #email-input {
+                font-size: 2em;
+                width: 250px;
+                height: 30px;
+            }
+            #email-sug-wrapper {
+                font-size: 2em;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                min-width: 250px;
+
+                position: absolute;
+                left: 0;
+                top: 30px;
+
+                border: 1px solid gray;
+                border-top: none;
+                display: none;
+            }
+            #email-sug-wrapper li {
+                padding: 3px 10px;
+            }
+            #email-sug-wrapper li:hover,
+            #email-sug-wrapper li:focus,
+            #email-sug-wrapper li:active {
+                background-color: #00bcd4;
+                cursor: pointer;
+            }
+            #email-sug-wrapper li.selected {
+                background-color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>一个输入提示小案例</h2>
+        <div class="wrapper">
+            <input id="email-input" type="text">
+            <ul id="email-sug-wrapper" class="email-sug">
+            </ul>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
