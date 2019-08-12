@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>第三十四天到第三十六天 我是精明的小卖家（二）</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body>
+        <h2>使用SVG</h2>
+        <svg version="1.1"
+             baseProfile="full"
+             width="250" height="500"
+             xmlns="http://www.w3.org/2000/svg">
+          <rect width="250" height="500" fill="#eeeeee"/>
+          <text x="10" y="30" text-anchor="start" font-size="20" font-weight="bold" fill="purple">画一条线</text>
+          <line x1="10" x2="200" y1="50" y2="50" stroke="gray" fill="transparent" stroke-width="3"/> 
+          <rect x="10" y="60" width="80" height="80" fill="gray" /> 
+          <text x="10" y="170" text-anchor="start" font-size="20" font-weight="bold" fill="purple">画一个圆</text>
+          <circle cx="30" cy="200" r="20" fill="gray"/>
+          <text x="10" y="260" text-anchor="start" font-size="20" font-weight="bold" fill="purple">显示一些文字</text>
+          <text x="10" y="320" font-size="40" font-family="Arial" font-weight="bold" stroke-width="2" 
+                stroke="black" fill="purple">Hello World!</text>
+        </svg>
+        <svg version="1.1"
+             baseProfile="full"
+             width="500" height="500"
+             xmlns="http://www.w3.org/2000/svg">
+          <rect width="500" height="500" fill="#eeeeee"/>
+          <text x="10" y="30" text-anchor="start" font-size="20" font-weight="bold" fill="purple">画一朵花</text>
+
+          <!--花茎-->
+          <g transform="rotate(-30, 150, 150)">
+            <path d="M 225 300 Q 265 350, 225 400 Q 185 350, 225 300" 
+                  stroke-width="1" stroke="#575757" fill="#337f2a" transform="rotate(90, 225, 300)"/>
+            <path d="M 225 300 Q 265 350, 225 400 Q 185 350, 225 300" 
+                  stroke-width="1" stroke="#575757" fill="#337f2a" transform="rotate(-125, 225, 300)"/>
+            <path d="M 150 150 Q 300 300, 150 550" stroke-width="4" stroke="#298c55" 
+                  fill="transparent" transform="rotate(0, 150, 150)"/>
+          </g>
+
+          <!--花瓣集合1-->
+          <g transform="rotate(-30, 150, 150)">
+            <path d="M 150 150 C 60 280,240 280, 150 150" stroke="#575757" fill="#ffcc09"
+                fill="transparent" stroke-width="1" stroke-linecap="round" transform="rotate(45, 150, 150)"/>
+            <path d="M 150 150 C 60 280,240 280, 150 150" stroke="#575757" fill="#ffcc09"
+                fill="transparent" stroke-width="1" stroke-linecap="round" transform="rotate(135, 150, 150)"/>
+            <path d="M 150 150 C 60 280,240 280, 150 150" stroke="#575757" fill="#ffcc09"
+                fill="transparent" stroke-width="1" stroke-linecap="round" transform="rotate(225, 150, 150)"/>
+            <path d="M 150 150 C 60 280,240 280, 150 150" stroke="#575757" fill="#ffcc09"
+                fill="transparent" stroke-width="1" stroke-linecap="round" transform="rotate(315, 150, 150)"/>
+          </g>
+          <!--花瓣集合2-->
+          <g transform="rotate(-30, 150, 150)">
+            <path d="M 150 150 C 60 280,240 280, 150 150" stroke="#575757" fill="#ffcc09"
+                  fill="transparent" stroke-width="1" stroke-linecap="round" transform="rotate(0, 150, 150)"/>
+            <path d="M 150 150 C 60 280,240 280, 150 150" stroke="#575757" fill="#ffcc09"
+                  fill="transparent" stroke-width="1" stroke-linecap="round" transform="rotate(90, 150, 150)"/>
+            <path d="M 150 150 C 60 280,240 280, 150 150" stroke="#575757" fill="#ffcc09"
+                  fill="transparent" stroke-width="1" stroke-linecap="round" transform="rotate(180, 150, 150)"/>
+            <path d="M 150 150 C 60 280,240 280, 150 150" stroke="#575757" fill="#ffcc09"
+                  fill="transparent" stroke-width="1" stroke-linecap="round" transform="rotate(270, 150, 150)"/>
+          </g>
+          <circle cx="150" cy="150" r="40" fill="#500400" stroke-width="1" stroke="#575757"/>
+          
+
+        </svg>
+        <h2>使用canvas</h2>
+        <canvas id="canvas1" width="250" height="400"></canvas>
+        <canvas id="canvas2" width="500" height="400"></canvas>
+        <script src="canvas.js"></script>
+    </body>
+</html>
