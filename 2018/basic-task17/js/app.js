@@ -64,6 +64,7 @@ window.addEventListener('load', function(){
           saleLine.drawLine(data);
         }
 
+        //移开鼠标，恢复原始图表
         function leaveFun(event){
           var data = [];
           list.forEach(function(item, idx, arr){
