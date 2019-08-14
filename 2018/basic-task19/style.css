@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 5px;
+    width: 90px;
+    text-align: center;
+}
+
+td.active {
+    background-image: url('images/edit.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#bar-wrap, #canvas, #table-wrap {
+    display: inline-block;
+}
+
+#product-radio-wrap {
+    margin-bottom: 20px;
+}
