@@ -118,6 +118,9 @@
                     item.checked = true;
                     _this.inputsData[idx] = item.value;
                     count++;
+                }else{
+                    item.checked = false;
+                    _this.inputsData[idx] = undefined;
                 }
             });
             if(count === inputs.length) {
