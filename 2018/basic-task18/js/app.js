@@ -50,9 +50,12 @@ window.addEventListener('load', function(){
             table.addEventListener('mouseleave', leaveFun, false);
         function overFun(event){
           var data = [],
-              lineIdx = 0;
+              lineIdx = 0,
+              target = event.target;
           //获得当前行数
-          lineIdx = event.path[1].rowIndex;
+          if(target.nodeName === 'TD') lineIdx = event.path[1].rowIndex;
+          if(target.nodeName === 'TR') lineIdx = target.rowIndex;
+          
           //如果是标题行，直接返回
           if(!lineIdx) return;
           //如果是其它行，获得当前行的数据放到data里面
