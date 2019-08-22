@@ -149,11 +149,11 @@ window.addEventListener('load', function(){
             return location.search.length ? location.search.substring(3) : '';
         }
         function anaStr(){
-            var str =decodeURIComponent(getStr());
+            var str = decodeURIComponent(getStr());
             if(!str){
                 product_checkbox.setInput('all');
                 region_checkbox.setInput('all');
-                window.history.replaceState({}, document.title + '全部地区，全部商品', '?q=all');
+                window.history.replaceState({}, '全部地区，全部商品', '?q=all');
             }else{
                 product_checkbox.setInput(str);
                 region_checkbox.setInput(str);
